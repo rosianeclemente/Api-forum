@@ -6,11 +6,12 @@ import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
-data class Usuario(
+data class Curso(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
     val nome: String,
-    val email: String
+    val categoria: String
 ) {
+
 
 }
