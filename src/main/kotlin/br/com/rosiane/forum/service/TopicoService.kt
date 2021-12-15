@@ -7,7 +7,6 @@ import br.com.rosiane.forum.dto.TopicoView
 import br.com.rosiane.forum.exception.NotFoundException
 import br.com.rosiane.forum.mapper.TopicoFormMapper
 import br.com.rosiane.forum.mapper.TopicoViewMapper
-import br.com.rosiane.forum.model.Topico
 import br.com.rosiane.forum.repository.TopicoRepository
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
