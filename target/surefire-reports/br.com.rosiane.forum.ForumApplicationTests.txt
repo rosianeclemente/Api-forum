@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: br.com.rosiane.forum.ForumApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.179 s <<< FAILURE! - in br.com.rosiane.forum.ForumApplicationTests
-contextLoads  Time elapsed: 0 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.613 s <<< FAILURE! - in br.com.rosiane.forum.ForumApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'topicoController' defined in file [/home/rosiane/Api-Pizzaria/target/classes/br/com/rosiane/forum/controller/TopicoController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'topicoService' defined in file [/home/rosiane/Api-Pizzaria/target/classes/br/com/rosiane/forum/service/TopicoService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'br.com.rosiane.forum.mapper.TopicoFormMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'topicoService' defined in file [/home/rosiane/Api-Pizzaria/target/classes/br/com/rosiane/forum/service/TopicoService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'br.com.rosiane.forum.mapper.TopicoFormMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}

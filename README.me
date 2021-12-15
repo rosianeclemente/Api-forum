@@ -1,0 +1,21 @@
+Para utilizar o MySQL como banco de dados você precisará trocar a dependência do H2 pela do MySQL no pom.xml:
+
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <scope>runtime</scope>
+</dependency>COPIAR CÓDIGO
+E também precisará alterar as propriedades no arquivo application.yml:
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/forum
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: trueCOPIAR CÓDIGO
